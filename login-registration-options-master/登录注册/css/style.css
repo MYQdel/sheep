@@ -1,0 +1,285 @@
+body {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.outer-container {
+  width: 600px;
+  height: 640px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  margin: 100px auto 40px;
+  box-shadow: 0 2px 16px 0 rgba(224, 224, 224, 0.2);
+  overflow: hidden;
+  display: flex;
+}
+
+
+.outer-container .right {
+  padding: 60px 100px 30px;
+  flex-grow: 1;
+}
+.outer-container .right .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.outer-container .right .title a {
+  font-size: 20px;
+  line-height: 20px;
+  color: #333333;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.outer-container .right .title a.link:hover {
+  color: #6495de;
+  transition: all ease-in-out 0.2s;
+}
+.outer-container .right .title a.active {
+  font-weight: bold;
+  text-align: center;
+  color: #6495de;
+  cursor: auto;
+}
+.outer-container .right .title a.active::after {
+  content: "";
+  width: 10px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #6495de;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 30px;
+  -webkit-animation: line-show 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: line-show 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.outer-container .right .title .single {
+  font-size: 28px;
+  line-height: 28px;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.outer-container .right .title.flex-around {
+  justify-content: space-around;
+}
+.outer-container .right .title.flex-center {
+  justify-content: center;
+}
+.outer-container .right .item_box {
+  height: 90px;
+  padding-top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.outer-container .right .item_box .item_left {
+  width: 230px;
+}
+.outer-container .right .item_box .item_right {
+  width: 160px;
+}
+.outer-container .right .item_box .item_right .img_yzm {
+  height: 100%;
+  background-color: #fffbd4;
+}
+.outer-container .right .input_box {
+  height: 54px;
+  border-bottom: 1px solid #cccccc;
+  flex-grow: 1;
+ 
+}
+.outer-container .right .input_box .input_left {
+  width: 80px;
+}
+.outer-container .right .input_box .input_left select {
+  padding-top: 7px;
+}
+.outer-container .right .input_box .icon_middle {
+  width: 40px;
+}
+.outer-container .right .input_box .icon_middle i {
+  font-size: 20px;
+  line-height: 63px;
+}
+.outer-container .right input,
+.outer-container .right select {
+  width: 100%;
+  height: 53px;
+  font-size: 18px;
+  padding-top: 25px;  /* 调整 padding-top，减少空白 */
+  padding-bottom: 16px; /* 调整 padding-bottom，确保文字垂直居中 */
+  line-height: 1.5; 
+}
+.outer-container .right .forget {
+  color: #6495de;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 20px;
+  float: right;
+}
+.outer-container .right .forget:hover {
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: all ease-in-out 0.2s;
+}
+.bottom_box {
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom_box a:hover {
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: all ease-in-out 0.2s;
+}
+.bottom_box .bottom_left a {
+  float: right;
+  color: #6495de;
+}
+.bottom_box .bottom_left a.wx {
+  color: #50b674;
+}
+.bottom_box .bottom_left i {
+  font-size: 26px;
+}
+.bottom_box .bottom_left .iconxiaochengxuicon- {
+  vertical-align: -4px;
+  font-size: 30px;
+}
+.bottom_box .bottom_left .iconweixin {
+  vertical-align: -3px;
+}
+.bottom_box .bottom_left.f_16 {
+  font-size: 16px;
+}
+.bottom_box .bottom_right a {
+  float: right;
+  color: #6495de;
+}
+.middle_along {
+  justify-content: center;
+}
+.logo-box {
+  width: 300px;
+  height: 60px;
+}
+.logo-box a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.logo-box img {
+  height: 100%;
+  object-fit: contain;
+}
+button {
+  background-color: #6495de;
+  color: #FFFFFF;
+  font-size: 20px;
+  box-shadow: 0 2px 16px 0 rgba(100, 149, 222, 0.2);
+}
+button:hover {
+  cursor: pointer;
+  opacity: .9;
+  transition: all ease-in-out 0.2s;
+}
+button.short {
+  width: 160px;
+  height: 54px;
+  border-radius: 27px;
+}
+button.long {
+  width: 420px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 60px 0 70px;
+}
+button[disabled] {
+  background-color: #efefef;
+  color: #666666;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.qr_box {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #999999;
+  margin: 80px auto 10px;
+}
+.qr_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+p {
+  text-align: center;
+  margin-bottom: 120px;
+}
+.copyright {
+  font-size: 16px;
+  text-align: center;
+  color: #666666;
+}
+.mt_30 {
+  margin-top: 30px;
+}
+.mt_60 {
+  margin-top: 60px;
+}
+.mt_90 {
+  margin-top: 90px;
+}
+.mt_28 {
+  margin-top: 28px!important;
+}
+.trans {
+  transition: all ease-in-out 0.2s;
+}
+/*文字动画*/
+.text-pop-up-top {
+  -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes line-show {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 24px;
+  }
+}
